@@ -93,10 +93,10 @@
 
         Base {
             bindings = <
-       &kp Q  &kp W  &kp F    &kp P      &kp G      &kp J     &kp L            &kp U      &kp Y    &kp SQT
-       &kp A  &kp R  &kp S    &kp T      &kp D      &kp H     &kp N            &kp E      &kp I    &kp O
-&kp Q  &kp Z  &kp X  &kp C    &kp V      &kp B      &kp K     &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI
-                     &kp ESC  &kp SPACE  &kp TAB    &kp BSPC  &mt RSHFT ENTER  &kp DEL
+       &kp Q  &kp W  &kp F    &kp P         &kp G      &kp J     &kp L            &kp U      &kp Y    &kp SQT
+       &kp A  &kp R  &kp S    &kp T         &kp D      &kp H     &kp N            &kp E      &kp I    &kp O
+&kp Q  &kp Z  &kp X  &kp C    &kp V         &kp B      &kp K     &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI
+                     &kp ESC  &ltq 1 SPACE  &kp TAB    &kp BSPC  &mt RSHFT ENTER  &kp DEL
             >;
         };
 
@@ -106,6 +106,24 @@
        &sk LGUI      &sk LALT    &sk LCTRL      &sk LSHFT     &kp LS(CARET)    &kp EQUAL      &kp LS(LPAR)     &kp LS(LBRC)   &kp LBKT  &kp MINUS
 &none  &kp LS(LT)    &kp LS(GT)  &kp BSLH       &kp LS(PIPE)  &kp LS(AMPS)     &kp LS(STAR)   &kp LS(RPAR)     &kp LS(RBRC)   &kp RBKT  &kp LS(UNDER)  &none
                                  &trans         &trans        &trans           &kp LC(BSPC)   &mt RSHFT ENTER  &kp ESC
+            >;
+        };
+
+        Numbers {
+            bindings = <
+       &kp LEFT    &kp DOWN    &kp UP     &kp RIGHT  &kp LS(PRCNT)    &kp FSLH      &kp N7           &kp N8   &kp N9  &kp LS(PLUS)
+       &sk LGUI    &sk LALT    &sk LCTRL  &sk LSHFT  &sk RALT         &kp EQUAL     &kp N4           &kp N5   &kp N6  &kp MINUS
+&none  &kp LS(LT)  &kp LS(GT)  &kp TAB    &kp BSPC   &kp SPACE        &kp LS(STAR)  &kp N1           &kp N2   &kp N3  &kp LS(UNDER)  &none
+                               &trans     &trans     &trans           &kp N0        &mt RSHFT ENTER  &kp DOT
+            >;
+        };
+
+        Function {
+            bindings = <
+       &kp C_STOP  &kp C_PREVIOUS  &kp C_PP       &kp C_NEXT     &kp C_BRI_UP    &kp F12   &kp F7     &kp F8     &kp F9  &caps_dance
+       &sk LGUI    &sk LALT        &sk LCTRL      &sk LSHFT      &kp C_BRI_DN    &kp F11   &kp F4     &kp F5     &kp F6  &to 0
+&none  &kp C_MUTE  &kp C_VOL_DN    &kp LS(LC(C))  &kp LS(LC(V))  &kp C_VOL_UP    &kp F10   &kp F1     &kp F2     &kp F3  &trans       &trans
+                                   &trans         &trans         &trans          &kp RALT  &kp RSHFT  &kp RCTRL
             >;
         };
     };
