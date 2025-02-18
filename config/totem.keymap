@@ -141,28 +141,28 @@
 
         Qwerty {
             bindings = <
-       &kp Q  &kp W  &kp E         &kp R         &kp T         &kp Y             &kp U            &kp I           &kp O    &kp P
-       &kp A  &kp S  &kp D         &kp F         &kp G         &kp H             &kp J            &kp K           &kp L    &kp SQT
-&kp Q  &kp Z  &kp X  &kp C         &kp V         &kp B         &kp N             &kp M            &kp COMMA       &kp DOT  &kp FSLH  &kp SEMI
-                     &lt 8 ESCAPE  &ltq 4 SPACE  &ltq 6 TAB    &ltq 9 BACKSPACE  &mt RSHFT ENTER  &ltq 10 DELETE
+             &kp Q  &kp W  &kp E         &kp R         &kp T         &kp Y             &kp U            &kp I           &kp O    &kp P
+             &kp A  &kp S  &kp D         &kp F         &kp G         &kp H             &kp J            &kp K           &kp L    &kp SQT
+&key_repeat  &kp Z  &kp X  &kp C         &kp V         &kp B         &kp N             &kp M            &kp COMMA       &kp DOT  &kp FSLH  &mouse_layer
+                           &lt 8 ESCAPE  &ltq 4 SPACE  &ltq 6 TAB    &ltq 9 BACKSPACE  &mt RSHFT ENTER  &ltq 10 DELETE
             >;
         };
 
         Mac {
             bindings = <
-       &kp Q  &kp W  &kp F         &kp P         &kp G         &kp J             &kp L            &kp U           &kp Y    &kp SQT
-       &kp A  &kp R  &kp S         &kp T         &kp D         &kp H             &kp N            &kp E           &kp I    &kp O
-&kp Q  &kp Z  &kp X  &kp C         &kp V         &kp B         &kp K             &kp M            &kp COMMA       &kp DOT  &kp FSLH  &kp SEMI
-                     &lt 8 ESCAPE  &ltq 5 SPACE  &ltq 7 TAB    &ltq 9 BACKSPACE  &mt RSHFT ENTER  &ltq 10 DELETE
+             &kp Q  &kp W  &kp F         &kp P         &kp G         &kp J             &kp L            &kp U           &kp Y    &kp SQT
+             &kp A  &kp R  &kp S         &kp T         &kp D         &kp H             &kp N            &kp E           &kp I    &kp O
+&key_repeat  &kp Z  &kp X  &kp C         &kp V         &kp B         &kp K             &kp M            &kp COMMA       &kp DOT  &kp FSLH  &mouse_layer
+                           &lt 8 ESCAPE  &ltq 5 SPACE  &ltq 7 TAB    &ltq 9 BACKSPACE  &mt RSHFT ENTER  &ltq 10 DELETE
             >;
         };
 
         Mac-Qwerty {
             bindings = <
-       &kp Q  &kp W  &kp E         &kp R         &kp T         &kp Y             &kp U            &kp I           &kp O    &kp P
-       &kp A  &kp S  &kp D         &kp F         &kp G         &kp H             &kp J            &kp K           &kp L    &kp SQT
-&kp Q  &kp Z  &kp X  &kp C         &kp V         &kp B         &kp N             &kp M            &kp COMMA       &kp DOT  &kp FSLH  &kp SEMI
-                     &lt 8 ESCAPE  &ltq 5 SPACE  &ltq 7 TAB    &ltq 9 BACKSPACE  &mt RSHFT ENTER  &ltq 10 DELETE
+             &kp Q  &kp W  &kp E         &kp R         &kp T         &kp Y             &kp U            &kp I           &kp O    &kp P
+             &kp A  &kp S  &kp D         &kp F         &kp G         &kp H             &kp J            &kp K           &kp L    &kp SQT
+&key_repeat  &kp Z  &kp X  &kp C         &kp V         &kp B         &kp N             &kp M            &kp COMMA       &kp DOT  &kp FSLH  &mouse_layer
+                           &lt 8 ESCAPE  &ltq 5 SPACE  &ltq 7 TAB    &ltq 9 BACKSPACE  &mt RSHFT ENTER  &ltq 10 DELETE
             >;
         };
 
@@ -231,10 +231,10 @@
 
         Mouse {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans       &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
-        &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &sk RALT     &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans  &trans    &trans    &trans     &trans     &trans       &trans          &trans          &trans          &trans           &trans  &tog_off 11
-                            &mkp MCLK  &mkp LCLK  &mkp RCLK    &mkp LCLK       &mkp RCLK       &mkp MCLK
+       &none     &none     &none      &none      &none        &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none
+       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &sk RALT     &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&none  &none     &none     &none      &none      &none        &none           &none           &none           &none            &none  &tog_off 11
+                           &mkp MCLK  &mkp LCLK  &mkp RCLK    &mkp LCLK       &mkp RCLK       &mkp MCLK
             >;
         };
     };
